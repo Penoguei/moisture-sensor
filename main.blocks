@@ -1,0 +1,19 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="Ay{GCi=_`[//Vet-phLO">Moisture</variable></variables><block type="device_forever" id="KD-Ku!(HEC]Wsr)^Lcv0" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="pr7PT$1*as?gpbhYe1!b"><field name="VAR" id="Ay{GCi=_`[//Vet-phLO">Moisture</field><value name="VALUE"><shadow type="math_number" id="!FG8xvR3I#k%vyMzHT4X"><field name="NUM">0</field></shadow><block type="device_get_analog_pin" id="1l_*BSR9@Aj|4iFasE%`"><value name="name"><shadow type="analog_read_write_pin_shadow" id="Pv--IEgKH6M]e`-EuREb"><field name="pin">AnalogReadWritePin.P1</field></shadow></value></block></value><next><block type="controls_if" id="Y:)ilmbr#nkB?mMZw|2y"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="Mj0~3,RPi~+V,1MDR;AP"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="5Io=;Bx_CNT+z%Ht}D}Z"><field name="OP">LTE</field><value name="A"><shadow type="math_number" id="%Ej6MhwGvN=ct0qD_B^P"><field name="NUM">0</field></shadow><block type="variables_get" id="^@5^jWY3x*FZ*vvs|Ux#"><field name="VAR" id="Ay{GCi=_`[//Vet-phLO">Moisture</field></block></value><value name="B"><shadow type="math_number" id=".0P@93~|B#:u!O=;NLX|"><field name="NUM">300</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="xs$Q^H6P9RgF73Q^=kNC"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # . . . #
+        `</field></block></statement><statement name="ELSE"><block type="controls_if" id="Dvtz2Fv_av$Mos9fy(J="><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="|=TSWeYyuRs{$~WIkl)v"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="Z0heipBju~e?EpFFX@%F"><field name="OP">LTE</field><value name="A"><shadow type="math_number" id="(mD?Y..wzaBz6UhRn-LJ"><field name="NUM">0</field></shadow><block type="variables_get" id="pM:aAV{S%eYC:Q;0DSL?"><field name="VAR" id="Ay{GCi=_`[//Vet-phLO">Moisture</field></block></value><value name="B"><shadow type="math_number" id="Ryi(4%21Bq,]I-Mu=0_9"><field name="NUM">600</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="/[ZgGKy|lb51WGnhL5`N"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        . . . . .
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="$z-2ZZ/1=)O9)Z-bF8(#"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # . . . # 
+        . # # # .
+        `</field></block></statement><next><block type="device_pause" id="INOkD~u5?Ohc~Rw7J=ZD"><value name="pause"><shadow type="timePicker" id="DV(wY:r[2ygW/:+^VEU5"><field name="ms">2500</field></shadow></value></block></next></block></statement></block></next></block></statement></block></xml>
